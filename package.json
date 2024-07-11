@@ -1,0 +1,21 @@
+{
+  "name": "frontend_part2",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env $(cat .env | xargs) watchify ./script.js -t [ envify ] -o bundle.js --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "envify": "^4.1.0",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
